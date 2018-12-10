@@ -1,0 +1,12 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.google.ar.sceneform:plugin:1.5.1'
+    }
+}
