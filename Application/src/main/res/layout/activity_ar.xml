@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.android.camera2raw.ArActivity">
+    <fragment
+        android:id="@+id/ux_fragment"
+        android:name="com.example.android.camera2raw.MARFragment"
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rotationview"
+            android:layout_gravity="top|right"
+            android:padding="30dp"
+            android:textSize="20dp"
+            android:text="YPR"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceview"
+            android:layout_gravity="top|right"
+            android:padding="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:text="Dist"/>
+
+        <Button
+            android:id="@+id/switchactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Capture"
+            android:onClick="onSwitchActivity"/>
+
+    </FrameLayout>
+</FrameLayout>
